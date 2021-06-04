@@ -6,7 +6,7 @@ cont = JSON.parse data.gsub('=>', ':')
 
 # Method for webpage creation
 def build_web_page (hash)
-    
+
     # Put info into a array
     content = []
     hash.each do |k, v|
@@ -86,11 +86,13 @@ def build_web_page (hash)
         output.puts "\t\t<hr>"
     end
 
+    #Close html structure
     output.puts "\t</ul>"
     output.puts "</body>"
     output.puts "</html>"
 
 end
 
+#Generate index.html
 build_web_page cont
 
